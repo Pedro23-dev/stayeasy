@@ -1,0 +1,1060 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: rgb(98, 98, 197);
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover{
+    color: aqua;
+}
+
+.connex{
+    display: flex;
+}
+
+.home1{
+    background: url(../image/swimming-pool-3202525_1280.jpg);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 600px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h2{
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    color: rgb(98, 178, 209);
+}
+
+
+.home-content p{
+    font-size: 20px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #fff;
+}
+
+.btn-box a:nth-child(2):hover{
+    color:#081b29;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: #00abf0;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(223, 177, 27);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+/*Nos services*/
+
+.container1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #191a2b;
+}
+
+.service-wraper{
+    padding: 5% 8%;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: #fff;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: transparent;
+    letter-spacing: 4px;
+    background-color: rgb(4, 52, 83);
+    background: linear-gradient(8deg,rgb(8,52,83,1) 0%, rgba(0,230,173,1) 41%,rgba(41,17,45,1)100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+h1:after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8%;
+    width: 80%;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.05);
+}
+
+h1 span{
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    height: 8%;
+    width: 2%;
+    border-radius: 50%;
+    background-color: #72e2ae;
+    animation: anim 5s linear infinite;
+}
+
+@keyframes anim{
+    95%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        left: 88%;
+    }
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card{
+    height: 330px;
+    width: 370px;
+    background-color: #1c2335;
+    padding: 3% 8%;
+    border: 0.2px solid rgba(114, 226,174,0.2);
+    border-radius: 8px;
+    transition: .6s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:after{
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: -200px;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: #fff;
+    height: 10px;
+    filter: blur(30px);
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.card:hover:after{
+    width: 225%;
+    top: -100%;
+}
+
+.card i{
+    color: #00abf0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 4.8rem;
+}
+
+.card h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.card p{
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+    color: rgba(255,255,255,0.6);
+}
+
+.card:hover{
+    background-color: transparent;
+    transform: translateY(-8px);
+    border-color: #00ff37;
+}
+
+.card i:hover{
+    color: #00ff37;
+}
+
+/*CONTACT*/
+
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #191a2b;
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 70px;
+    font-weight: 500;
+    color: #fff;
+
+}
+
+.contact .content p{
+    margin-top: 25px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: 10px;
+    font-size: 18px;
+}
+
+/*Reservation*/
+
+main {
+    padding: 2rem;
+    position: relative;
+    background-color: #191a2b;
+  }
+  main h1 {
+    text-align: center;
+  }
+  main .room-list {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main .room-list .room {
+    border: 2px solid  transparent;
+    border-radius: 5%;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(154, 154, 249);
+  }
+  main .room-list .room:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  main .room-list .room img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  main .room-list .status {
+    color: green;
+  }
+  main .tet {
+    resize: none;
+  }
+  
+/*INSCRIPTION*/
+
+.furie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a;
+}
+
+.furie .box{
+    position: relative;
+    width: 400px;
+    height: 550px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.furie .box::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,
+    #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.furie .box::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,
+    #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+}
+
+.furie .borderLine{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+
+.furie .borderLine::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,
+    #ff2770);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+
+.furie .borderLine::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,
+    #ff2770);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.furie .box form{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.furie .box form h2{
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.furie .box form .inputBox{
+    position: relative;
+    width: 290px;
+    margin-top: 20px;
+}
+
+.furie .box form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.furie .box form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.furie .box form .inputBox input:valid ~ span,
+.furie .box form .inputBox input:focus ~ span{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+
+.furie .box form .inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.furie .box form .inputBox input:valid ~ i,
+.furie .box form .inputBox input:focus ~ i{
+    height: 44px;
+}
+
+.furie .box form .link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.furie .box form .link a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.furie .box form .link a:hover,
+.furie .box form .link a:nth-child(2){
+    color: #fff;
+}
+
+.furie .box form  input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.furie .box form  input[type="submit"]:active{
+    opacity: 0.8;
+}
+
+.furie .box form  input[type="submit"]:hover{
+    background: #00abf0;
+ }
+
+/*CONNEXION*/
+
+.furie .box1{
+    position: relative;
+    width: 400px;
+    height: 350px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.furie .box1::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,
+    #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.furie .box1::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,
+    #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+}
+
+.furie .borderLine{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+
+.furie .borderLine::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,
+    #ff2770);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+
+.furie .borderLine::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#ff2770,#ff2770,
+    #ff2770);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.furie .box1 form{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.furie .box1 form h2{
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.furie .box1 form .inputBox{
+    position: relative;
+    width: 290px;
+    margin-top: 20px;
+}
+
+
+.furie .box1 form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.furie .box1 form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.furie .box1 form .inputBox input:valid ~ span,
+.furie .box1 form .inputBox input:focus ~ span{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+
+.furie .box1 form .inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.furie .box1 form .inputBox input:valid ~ i,
+.furie .box1 form .inputBox input:focus ~ i{
+    height: 44px;
+}
+
+.furie .box1 form .link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.furie .box1 form .link a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.furie .box1 form .link a:hover,
+.furie .box1 form .link a:nth-child(2){
+    color: #fff;
+}
+
+.furie .box1 form  input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.furie .box1 form  input[type="submit"]:active{
+    opacity: 0.8;
+}
+
+.furie .box1 form  input[type="submit"]:hover{
+   background: #00abf0;
+}
+
+/*confirmation*/
+
+.furie .box2{
+    position: relative;
+    width: 400px;
+    height: 490px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.furie .box2::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,
+    #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.furie .box2::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#45f3ff,#45f3ff,
+    #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+}
+
+.furie .borderLine{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+
+.furie .borderLine::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent, #ddf505,#ddf505,
+    #ff2770);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+
+.furie .borderLine::after{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,transparent,#00ff37,#00ff37,
+    #ff2770);
+    z-index: 1;
+    transform-origin: bottom right; 
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.furie .box2 form{
+    position: absolute;
+    inset: 4px;
+    background: #222;
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.furie .box2 form h2{
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.furie .box2 form .inputBox{
+    position: relative;
+    width: 290px;
+    margin-top: 20px;
+}
+
+.furie .box2 form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.furie .box2 form .inputBox1{
+    margin-top: 40px;
+}
+
+.furie .box2 form .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.furie .box2 form .inputBox input:valid ~ span,
+.furie .box2 form .inputBox input:focus ~ span{
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-34px);
+}
+
+.furie .box2 form .inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.furie .box2 form .inputBox input:valid ~ i,
+.furie .box2 form .inputBox input:focus ~ i{
+    height: 44px;
+}
+
+.furie .box2 form .link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.furie .box2 form .link a{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+}
+
+.furie .box2 form .link a:hover,
+.furie .box2 form .link a:nth-child(2){
+    color: #fff;
+}
+
+.furie .box2 form  input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.furie .box2 form  input[type="submit"]:active{
+    opacity: 0.8;
+}
+
+.furie .box2 form  input[type="submit"]:hover{
+   background: #00abf0;
+}

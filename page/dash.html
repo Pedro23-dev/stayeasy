@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style/dash.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <h2>STAY<span class="danger">EASY</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+              <a href="#"><i class="fas fa-chart-bar">Ajouter</i></a>
+               <a href="#"><i class="fas fa-chart-bar">Réservation</i></a>
+               <a href="../html/messagerie-gerant.html"><i class="fas fa-chart-bar"></i>Méssagerie</a>
+               <a href="../html/gerant-connexion.html"><i class="fas fa-chart-bar">Se deconnecter</i></a>
+            </div>
+        </aside>
+
+
+
+        <main>
+            <h1>Analytics</h1>
+
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total de Profil</h3>
+                            <h1>$65,024</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="50" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+80%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Vue sur le site</h3>
+                            <h1>24,981</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>-78%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Recherche</h3>
+                            <h1>14,147</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="commandesContent" style="display: none;">
+
+              </div> 
+
+            <div class="recent-orders">
+                <h2>Réservation</h2>
+                <table id="reservationsTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Home Id</th>
+                            <th>Price</th>
+                            <th>Status</th>
+                            <th>Date de reservation</th>
+                            <th>Date d'installation</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reservationsTableBody"></tbody>
+                </table> <br> <br> <br> <br>
+            </div>
+
+        </main>
+
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        L
+                    </span>
+                    <span class="material-icons-sharp">
+                        D
+                    </span>
+                </div>
+
+
+            </div>
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="../Assets/c1.jpg">
+                    <h2>STAY<br> EASY</h2>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            volume_up
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            edit
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="../script/index.js"></script>
+</body>
+</html>
